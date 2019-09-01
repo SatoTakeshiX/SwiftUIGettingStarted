@@ -15,6 +15,9 @@
 		3004C0C7231B562F004CC5F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3004C0C5231B562F004CC5F5 /* LaunchScreen.storyboard */; };
 		3004C0D2231B562F004CC5F5 /* _2_Frog_Picture_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004C0D1231B562F004CC5F5 /* _2_Frog_Picture_BookTests.swift */; };
 		3004C0DD231B562F004CC5F5 /* _2_Frog_Picture_BookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004C0DC231B562F004CC5F5 /* _2_Frog_Picture_BookUITests.swift */; };
+		3004C0EC231B5857004CC5F5 /* Frog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004C0EB231B5857004CC5F5 /* Frog.swift */; };
+		3004C0EE231B8457004CC5F5 /* FrogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004C0ED231B8457004CC5F5 /* FrogItem.swift */; };
+		3004C0F0231B8E34004CC5F5 /* FrogDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004C0EF231B8E34004CC5F5 /* FrogDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		3004C0D8231B562F004CC5F5 /* 02_Frog_Picture_BookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 02_Frog_Picture_BookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3004C0DC231B562F004CC5F5 /* _2_Frog_Picture_BookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _2_Frog_Picture_BookUITests.swift; sourceTree = "<group>"; };
 		3004C0DE231B562F004CC5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3004C0EB231B5857004CC5F5 /* Frog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frog.swift; sourceTree = "<group>"; };
+		3004C0ED231B8457004CC5F5 /* FrogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogItem.swift; sourceTree = "<group>"; };
+		3004C0EF231B8E34004CC5F5 /* FrogDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,16 @@
 		3004C0B9231B562D004CC5F5 /* 02_Frog_Picture_Book */ = {
 			isa = PBXGroup;
 			children = (
-				3004C0BA231B562D004CC5F5 /* AppDelegate.swift */,
+				3004C0EA231B583E004CC5F5 /* Model */,
 				3004C0BC231B562D004CC5F5 /* SceneDelegate.swift */,
+				3004C0BA231B562D004CC5F5 /* AppDelegate.swift */,
 				3004C0BE231B562D004CC5F5 /* ContentView.swift */,
 				3004C0C0231B562F004CC5F5 /* Assets.xcassets */,
 				3004C0C5231B562F004CC5F5 /* LaunchScreen.storyboard */,
 				3004C0C8231B562F004CC5F5 /* Info.plist */,
 				3004C0C2231B562F004CC5F5 /* Preview Content */,
+				3004C0ED231B8457004CC5F5 /* FrogItem.swift */,
+				3004C0EF231B8E34004CC5F5 /* FrogDetail.swift */,
 			);
 			path = 02_Frog_Picture_Book;
 			sourceTree = "<group>";
@@ -134,6 +143,14 @@
 				3004C0DE231B562F004CC5F5 /* Info.plist */,
 			);
 			path = 02_Frog_Picture_BookUITests;
+			sourceTree = "<group>";
+		};
+		3004C0EA231B583E004CC5F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3004C0EB231B5857004CC5F5 /* Frog.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3004C0BB231B562D004CC5F5 /* AppDelegate.swift in Sources */,
+				3004C0EE231B8457004CC5F5 /* FrogItem.swift in Sources */,
+				3004C0F0231B8E34004CC5F5 /* FrogDetail.swift in Sources */,
 				3004C0BD231B562D004CC5F5 /* SceneDelegate.swift in Sources */,
 				3004C0BF231B562D004CC5F5 /* ContentView.swift in Sources */,
+				3004C0EC231B5857004CC5F5 /* Frog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,13 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    var frogs: [Frog]
     var body: some View {
-        Text("Hello World")
+        
+        NavigationView {
+            List(frogs) { frog in
+                NavigationLink(destination: FrogDetail(frog: frog)) {
+                    FrogItem(frog: frog)
+                }
+            }
+            .navigationBarTitle("カエル図鑑")
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(frogs: sampleFrogs)
     }
 }
