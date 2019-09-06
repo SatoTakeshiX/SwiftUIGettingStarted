@@ -12,12 +12,11 @@ struct FrogItem: View {
     var frog: Frog
     var body: some View {
         HStack {
-            
             Image(frog.imageName)
                 .resizable()
                 .frame(width: 50, height: 50)
                 .cornerRadius(10)
-            
+
             Text(frog.name)
                 .font(.title)
             if frog.hasPoison {
@@ -31,5 +30,6 @@ struct FrogItem: View {
 struct FrogItem_Previews: PreviewProvider {
     static var previews: some View {
         FrogItem(frog: sampleFrogs[3])
+           // .previewLayout(.sizeThatFits)
     }
 }

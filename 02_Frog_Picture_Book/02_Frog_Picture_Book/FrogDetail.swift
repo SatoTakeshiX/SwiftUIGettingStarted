@@ -10,13 +10,11 @@ import SwiftUI
 
 struct FrogDetail: View {
     var frog: Frog
-    @State var text: String = ""
     var body: some View {
         VStack {
             ZStack(alignment: .bottomTrailing) {
                 Image(frog.imageName)
                 .resizable()
-                .edgesIgnoringSafeArea(.top)
                 .frame(height: 300)
                 
                 if frog.hasPoison {
@@ -27,9 +25,7 @@ struct FrogDetail: View {
                         .padding(.all)
                 }
             }
-            .navigationBarTitle(Text(frog.name), displayMode: .inline)
             
-                
             Form {
                 Section(header: Text("生息地")) {
                     Text(frog.place)
@@ -40,6 +36,7 @@ struct FrogDetail: View {
                 }
             }
         }
+        .navigationBarTitle(Text(frog.name), displayMode: .inline)
     }
 }
 
