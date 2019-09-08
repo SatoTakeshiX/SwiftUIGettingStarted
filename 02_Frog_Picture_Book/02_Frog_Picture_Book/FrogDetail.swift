@@ -40,10 +40,15 @@ struct FrogDetail: View {
     }
 }
 
-struct FrogDetail_Previews: PreviewProvider {
+struct FrogDetail_Previewssss: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            FrogDetail(frog: sampleFrogs[3])
+        Group {
+            NavigationView {
+                FrogDetail(frog: sampleFrogs[0])
+            }
+            NavigationView {
+                FrogDetail(frog: sampleFrogs[3])
+            }
         }
     }
 }

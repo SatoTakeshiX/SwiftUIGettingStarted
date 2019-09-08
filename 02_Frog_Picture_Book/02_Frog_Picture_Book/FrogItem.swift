@@ -29,7 +29,12 @@ struct FrogItem: View {
 
 struct FrogItem_Previews: PreviewProvider {
     static var previews: some View {
-        FrogItem(frog: sampleFrogs[3])
-           // .previewLayout(.sizeThatFits)
+        ForEach(ContentSizeCategory.allCases, id: \.self) { category in
+            FrogItem(frog: sampleFrogs[3])
+                .previewLayout(.sizeThatFits)
+                .environment(\.sizeCategory, category)
+                .previewDisplayName("\(category)")
+            
+        }
     }
 }

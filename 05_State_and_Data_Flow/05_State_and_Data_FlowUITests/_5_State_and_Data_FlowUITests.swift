@@ -1,14 +1,14 @@
 //
-//  __Preview_on_Xcode11UITests.swift
-//  4_Preview_on_Xcode11UITests
+//  _5_State_and_Data_FlowUITests.swift
+//  05_State_and_Data_FlowUITests
 //
-//  Created by satoutakeshi on 2019/09/07.
+//  Created by satoutakeshi on 2019/09/08.
 //  Copyright © 2019 satoutakeshi. All rights reserved.
 //
 
 import XCTest
 
-class __Preview_on_Xcode11UITests: XCTestCase {
+class _5_State_and_Data_FlowUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

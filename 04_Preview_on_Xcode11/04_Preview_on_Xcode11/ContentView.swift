@@ -25,6 +25,22 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(frogs: sampleFrogs)
+        Group {
+            ContentView(frogs: sampleFrogs)
+                .environment(\.colorScheme, .dark)
+            ContentView(frogs: sampleFrogs)
+                .environment(\.colorScheme, .light)
+        }
+    }
+}
+
+struct ContentView_Device_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            ContentView(frogs: sampleFrogs)
+                .previewDevice(.init(rawValue: "iPhone 7"))
+            ContentView(frogs: sampleFrogs)
+                .previewDevice(.init(rawValue: "iPhone SE"))
+        }
     }
 }
