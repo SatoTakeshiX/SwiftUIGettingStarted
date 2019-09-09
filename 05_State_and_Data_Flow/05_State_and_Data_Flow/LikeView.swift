@@ -30,13 +30,10 @@ struct LikeView: View {
 }
 
 final class LikeViewModel: ObservableObject {
-    
     @Published var likeNumber: UInt = 0
-    
     func like() {
         likeNumber += 1
     }
-    
 }
 
 struct ObservedObjectView_Previews: PreviewProvider {
