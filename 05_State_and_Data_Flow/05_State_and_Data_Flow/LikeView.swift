@@ -23,6 +23,7 @@ struct LikeView: View {
             }
             .frame(width: 200, height: 50, alignment: .center)
             .background(Color.green)
+            .foregroundColor(Color.white)
             .cornerRadius(10)
         }
     }

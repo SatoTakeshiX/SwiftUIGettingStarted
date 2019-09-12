@@ -57,6 +57,6 @@ class UserSettings: ObservableObject {
 
 struct EnvironmentObject_Previews: PreviewProvider {
     static var previews: some View {
-        SettingView()
+        SettingView().environmentObject(UserSettings())
     }
 }
