@@ -8,9 +8,10 @@
 
 import SwiftUI
 import WebKit
+import SafariServices
 
 struct WebView: UIViewRepresentable {
-    @Binding var urlString: String
+    var urlString: String
     typealias UIViewType = WKWebView
     func makeUIView(context: Context) -> WKWebView {
         return WKWebView(frame: .zero)
@@ -23,3 +24,13 @@ struct WebView: UIViewRepresentable {
     }
 }
 
+struct SafariView: UIViewControllerRepresentable {
+    typealias UIViewControllerType = SFSafariViewController
+    var url: URL
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<SafariView>) -> SFSafariViewController {
+        return SFSafariViewController(url: url)
+    }
+
+    func updateUIViewController(_ uiViewController: SFSafariViewController, context: UIViewControllerRepresentableContext<SafariView>) {}
+}

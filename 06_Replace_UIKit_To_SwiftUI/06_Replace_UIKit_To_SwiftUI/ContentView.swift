@@ -16,13 +16,32 @@ struct ContentView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .textContentType(.URL)
                 .padding()
-            WebView(urlString: $inputText)
+            WebView(urlString: inputText)
         }
+    }
+}
+
+struct HomeView: View {
+    @State private var showModal = false
+    var body: some View {
+        Button(action: {
+            self.showModal = true
+        }, label: {
+            Text("https://google.com")
+        })
+        .sheet(isPresented: $showModal, onDismiss: {
+            print(self.showModal)
+        }, content: {
+        SafariView(url: URL(string: "https://google.com")!)
+    })
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            HomeView()
+        }
     }
 }

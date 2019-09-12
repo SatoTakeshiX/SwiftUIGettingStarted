@@ -109,11 +109,11 @@
 				3027E81223254DCF00E576F8 /* AppDelegate.swift */,
 				3027E81423254DCF00E576F8 /* SceneDelegate.swift */,
 				3027E81623254DCF00E576F8 /* ContentView.swift */,
+				3027E84723255B4100E576F8 /* WebView.swift */,
 				3027E81823254DD100E576F8 /* Assets.xcassets */,
 				3027E81D23254DD100E576F8 /* LaunchScreen.storyboard */,
 				3027E82023254DD100E576F8 /* Info.plist */,
 				3027E81A23254DD100E576F8 /* Preview Content */,
-				3027E84723255B4100E576F8 /* WebView.swift */,
 			);
 			path = 06_Replace_UIKit_To_SwiftUI;
 			sourceTree = "<group>";
