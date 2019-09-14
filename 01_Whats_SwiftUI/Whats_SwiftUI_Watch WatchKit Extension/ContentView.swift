@@ -31,8 +31,20 @@ struct ContentView: View {
     }
 }
 
+struct ToggleView: View {
+    @State var isOn: Bool = false
+    var body: some View {
+        Toggle(isOn: $isOn) {
+            Text("Toggle View")
+        }
+    }
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ToggleView()
+        }
     }
 }
